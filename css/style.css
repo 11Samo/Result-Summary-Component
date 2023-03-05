@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 144rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80rem;
+  column-gap: 4rem;
+  border-radius: 30px;
+  box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+/*********************/
+/* LEFT SIDE OF CARD */
+/*********************/
+
+.result {
+  /* background-color: hsl(234, 85%, 45%); */
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 25%,
+    hsl(241, 81%, 54%) 100%
+  );
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem 4.8rem;
+}
+
+.your-result {
+  font-size: 2.2rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.group-score {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(221, 100%, 96%);
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1) 10%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.of {
+  font-size: 2rem;
+  color: hsl(221, 100%, 96%);
+}
+
+.your-score {
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.great {
+  font-size: 3.5rem;
+}
+
+.description {
+  text-align: center;
+  width: 23rem;
+  margin: 2rem 0;
+  color: hsl(241, 100%, 89%);
+}
+
+/*********************/
+/* RIGHT SIDE OF CARD */
+/*********************/
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 3.5rem 3.5rem 0;
+}
+
+.part {
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.summary-heading {
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+}
+
+.part-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.part-score {
+  font-size: 2rem;
+  width: 100%;
+  text-align: right;
+  color: #999;
+  font-weight: 700;
+}
+
+.part-score span {
+  font-weight: 800;
+  color: hsl(234, 83%, 35%);
+}
+
+.reaction-part {
+  background-color: hsla(0, 100%, 67%, 0.07);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory-part {
+  background-color: hsl(39, 100%, 56%, 0.07);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal-part {
+  background-color: hsl(166, 100%, 37%, 0.07);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual-part {
+  background-color: hsl(234, 85%, 45%, 0.07);
+  color: hsl(234, 85%, 45%);
+}
+
+.btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 100px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 25%,
+    hsl(241, 81%, 54%) 100%
+  );
+  border: 2px solid transparent;
+}
+
+@media (max-width: 725px) {
+  .container {
+    padding: 0;
+    height: 100%;
+  }
+
+  .result {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .summary {
+    padding-left: 3.5rem;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .result {
+    box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.1);
+  }
+  .card {
+    grid-template-columns: 1fr;
+    /* width: 80rem; */
+    /* column-gap: 4rem; */
+    /* border-radius: 30px; */
+    /* box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.1); */
+  }
+}
